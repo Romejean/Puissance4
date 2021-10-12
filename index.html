@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Power of 4</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h3>the current player is : <span id="currentPlayer"></span></h3>
+        <h3 class="counter">Score</h3>
+
+
+        <Div class="jaune">
+            <h4>yellow</h4>
+            <button id="minus" onClick="minus()">-</button>
+            <span id="numberPlace">0</span>
+            <button id="plus" onClick="plus()">+</button>
+        </Div>
+        <div class="rouge">
+            <h4>red</h4>
+            <button id="minus2" onClick="minus2()">-</button>
+            <span id="numberPlace2">0</span>
+            <button id="plus2" onClick="plus2()">+</button>
+        </div>
+    </div>
+
+    <div class="Games">
+
+    </div>
+    <div id="reset">
+        <a href=""><button onClick="reload">Reset</button></a>
+
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.Games').game4(); // appel de la fonction 'game' du pluggin appliquée à la div de class 'Games'
+        });
+    </script>
+</body>
+
+</html>
